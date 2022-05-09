@@ -3,14 +3,11 @@ package com.example.demostack.controller;
 import com.example.demostack.CryptoResponse;
 import com.example.demostack.SpaceResponse;
 import com.example.demostack.WeatherResponse;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
-
+@CrossOrigin(origins={"http://localhost:3000"})
 @RestController
 @RequestMapping("api/")
 public class UserController {
